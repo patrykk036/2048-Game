@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #faf8ef;
+    font-weight: bold;
+}
+main{
+    width: 600px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+}
+.info-container{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-container h1{
+    flex-grow: 2;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+}
+.info-container h1 a{
+    text-decoration: none;
+    color: #766e66;
+
+}
+.info-score{
+    padding: 15px;
+    background-color: #b9a99a;
+    color: #766e66;
+    text-align: center;
+    margin: 10px;
+	margin-right: 0;
+    border-radius: 5px;
+    width: 100px;
+    line-height: 42px;
+    font-size: 15px;
+}
+
+.new-game{
+    border: 1px solid #b9a99a;
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: #766e66;
+    color: #eee4da;
+    width: 150px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.new-game:hover{
+    cursor: pointer;
+}
+.game-content{
+    clear: both;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b9ada1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.square{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #cac0b4;
+    text-align: center;
+    line-height: 80px;
+    font-size: 52px;
+    color: #766e66;
+    opacity: 1;
+}
+.n0{
+    background-color: #cac0b4;
+}
+.n2{
+    background-color: #eee4da;
+}
+.n4{
+    background-color: #ebdfc9;
+}
+.n8{
+    background-color: #e9b280;
+    color: white;
+}
+.n16{
+    background-color: #eb8c52;
+    color: white;
+}
+.n32{
+    background-color: #f47d5f;
+    color: white;
+}
+.n64{
+    background-color: #e95937;
+    color: white;
+}
+.n128{
+    background-color: #f2d86a;
+    color: white;
+    font-size: 44px;
+}
+.n256{
+    background-color: #dec14c;
+    color: white;
+    font-size: 44px;
+}
+.n512{
+    background-color: #e1c12e;
+    color: white;
+    font-size: 44px;
+}
+.n1024{
+    background-color: #dbbd0d;
+    color: white;
+    font-size: 32px; 
+}
+.n2048{
+    background-color: #e8bf43;
+    color: white;
+    font-size: 32px; 
+}
+.n4096{
+    background-color: #60d992;
+    color: white;
+    font-size: 32px; 
+}
