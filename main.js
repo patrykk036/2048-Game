@@ -4,10 +4,13 @@ let a =
 [0, 0, 0, 0],
 [0, 0, 0, 0]];
 let currentScore = 0;
-var rows = document.querySelector('.game-content').children;
-var domArr = [rows[0].children, rows[1].children, rows[2].children, rows[3].children];
-var moveArr = [];
+let bestScore = localStorage.getItem('localBest') == null ? 0 : 
+localStorage.getItem('localBest');
+let rows = document.querySelector('.game-content').children;
+let domArr = [rows[0].children, rows[1].children, rows[2].children, rows[3].children];
+let moveArr = [];
 let fadeTime = 270;
+document.querySelector('.best').innerText = bestScore;
 function draw(){
     for(var i = 0 ; i < 4 ; i++){
         for(var y = 0 ; y < 4 ; y++){
@@ -21,6 +24,7 @@ function draw(){
             }   
         }
     }
+    checkBestScore();
 }
 document.querySelector('.new-game').addEventListener('click', function(){
     a=[[2, 2, 0, 0],
@@ -48,6 +52,13 @@ function putNumber(){
 function checkLose(){
     if(!canMoveBottom() && !canMoveTop() && !canMoveLeft() && !canMoveRight()){
         alert("You lose");
+    }
+}
+function checkBestScore(){
+    if(currentScore > bestScore){
+        bestScore = currentScore;
+        localStorage.setItem('localBest', bestScore);
+        document.querySelector('.best').innerText = bestScore;
     }
 }
 

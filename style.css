@@ -42,6 +42,18 @@ main{
     line-height: 42px;
     font-size: 15px;
 }
+.best-score{
+    padding: 15px;
+    background-color: #b9a99a;
+    color: #766e66;
+    text-align: center;
+    margin: 10px;
+	margin-right: 0;
+    border-radius: 5px;
+    width: 100px;
+    line-height: 42px;
+    font-size: 15px;
+}
 
 .new-game{
     border: 1px solid #b9a99a;
