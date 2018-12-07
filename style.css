@@ -15,7 +15,7 @@ main{
 .info-container{
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,7 +38,7 @@ main{
     margin: 10px;
 	margin-right: 0;
     border-radius: 5px;
-    width: 100px;
+    width: 130px;
     line-height: 42px;
     font-size: 15px;
 }
@@ -50,7 +50,7 @@ main{
     margin: 10px;
 	margin-right: 0;
     border-radius: 5px;
-    width: 100px;
+    width: 130px;
     line-height: 42px;
     font-size: 15px;
 }
@@ -62,7 +62,7 @@ main{
     background-color: #766e66;
     color: #eee4da;
     width: 150px;
-    margin-left: 400px;
+    margin-left: 450px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
